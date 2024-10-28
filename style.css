@@ -1,0 +1,14 @@
+ #somatorio{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ }
+#legenda{
+
+}
+ #draw{
+    margin-top: 10px;
+ }
+ svg{
+    padding: 0;
+ }

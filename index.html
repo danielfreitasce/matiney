@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Princípio da indução matemática</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.css"
+        integrity="sha384-NFTC4wvyQKLwuJ8Ez9AvPNBv8zcC2XaQzXSMvtORKw28BdJbB2QE8Ka+OyrIHcQJ" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.js"
+        integrity="sha384-z9arB7KJHppq8kK9AESncXcQd/KXIMMPiCrAdxfFpp+5QU438lgBE7UFGbk+gljP"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="primeira_funcao.js"></script>
+</head>
+
+<body>
+    <h1>O Príncipio da indução matemática.</h1>
+    <p>É uma valiosa ferramenta para provarmos resultados que envolvem inteiros.</p>
+    <p>Vamos considerar a soma dos números ímpares: </p>
+    <p>1 + 3 + 5 + 7 + 11 + ...</p>
+    <p>Concorda comigo que podemos escrever essa soma assim:  1 + 3 + 5 + 7 + ... (2n - 1)? Sendo n o enésimo termo da sequência. Vamos reescrever essa soma usando a notação de somatório: </p>
+     
+    <p id="somatorio" >
+        <span id="equation"></span> 
+        <span id="legenda">(lê-se: soma do produto de i por 2 menos 1. Para i variando de 1 até n.)</span>
+    </p>
+    
+    <p>Vamos somar os 7 primeiros termo?</p>
+        
+    <p> Podemos usar nossa intuição para descobrirmos uma fórmula que nos dê essa soma sem precisar somar tudo até o enésimo termo.</p>
+    
+    <p>É uma fórmula que nos dá a soma dos n primeiros ímpares. Ou seja, a soma dos n primeiros ímpares é igual a n².
+    </p>
+    <p>Vamos verificar de forma prática. Selecione o n: </p> <input type="number" name="n" id="n" min="1" step="1"
+        placeholder="1" onchange="showCircles()">
+    <div id="draw">
+    </div>
+    <p id="total"></p>
+</body>
+
+</html>
